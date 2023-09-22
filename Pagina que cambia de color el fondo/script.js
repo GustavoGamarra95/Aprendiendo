@@ -1,21 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const corFundoInput = document.getElementById("corFundo");
+    const alterarCorButton = document.getElementById("alterarCor");
 
-h1 {
-    color: #333;
-}
+    alterarCorButton.addEventListener("click", function () {
+        const novaCor = corFundoInput.value;
+        alterarCorDeFundo(novaCor);
+    });
 
-label {
-    font-weight: bold;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff; 
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
+    function alterarCorDeFundo(novaCor) {
+        document.body.style.backgroundColor = novaCor;
+    }
+});
