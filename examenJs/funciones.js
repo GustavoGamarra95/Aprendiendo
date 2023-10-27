@@ -43,3 +43,4 @@ function Ifunction(num) {
   return num * 2;
 }
 console.log (newArr);
+/// 
