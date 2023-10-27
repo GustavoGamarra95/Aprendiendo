@@ -5,6 +5,7 @@ Conteúdo do exercício
 Crie uma função declarada que receba um array de inteiros e retorna um array contendo os números pares
 Crie uma função anônima que receba um array de inteiros e retorna um array contendo apenas os números ímpares deste array.
 Crie uma função recursiva que receba N e retorne o resultado fatorial deste número
+
 2 - Métodos de arrays
 
 Utilizando map, crie um novo array que contenha cada elemento do array original multiplicado por 2.
