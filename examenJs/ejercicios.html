@@ -15,12 +15,11 @@
 <script>
     ///
     const h1 = document.querySelector("h1");
-const divInterna = document.createElement("div");
-divInterna.textContent = "Esta é uma div interna";
-
-const divExterna = document.querySelector(".divExterna");
-
-btnMudar.addEventListener("click", () => {
+    const divInterna = document.createElement("div");
+    divInterna.textContent = "Esta é uma div interna";
+    const divExterna = document.querySelector(".divExterna");
+    
+    btnMudar.addEventListener("click", () => {
   if (h1.textContent === "Olá") {
     h1.textContent = "Tchau";
   } else {
