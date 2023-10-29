@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
-</head>
-<body>
-    <h1 id="idHola" class="texto">Hola </h1>
-    <button id="btnMudar">Mudar</button>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios</title>
+    </head>
+    <body>
+        <h1 id="idHola" class="texto">Hola </h1>
+        <div class="divInterna"></div>
+        <button id="btnMudar">Mudar</button>
+
+    </body>
 </html>
 <script>
     ///
-    const h1 =  document.querySelector("h1");
-    const btnMudar = document.getElementById('btnMudar');
-    btnMudar.addEventListener("click", () =>{
-        h1.textContent = "Tchau";
-    });
-    
+    const h1 = document.querySelector("h1");
+const divInterna = document.createElement("div");
+divInterna.textContent = "Esta é uma div interna";
+
+const divExterna = document.querySelector(".divExterna");
+
+btnMudar.addEventListener("click", () => {
+  if (h1.textContent === "Olá") {
+    h1.textContent = "Tchau";
+  } else {
+    h1.textContent = "Olá";
+  }
+
+  divExterna.appendChild(divInterna);
+});
+
 </script>
