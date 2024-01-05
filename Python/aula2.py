@@ -1,12 +1,10 @@
-''' DocStrings '''
-"""
-Apartado de comentarios
+# \r ->CRLF
+# \n ->LF
 
-se puede escrbir salteando las lineas
-""" 
+print (12, 34, sep='-', end ='\r\n'),
+print (56, 78, sep="-", end='\r\n'),
+print (9, 10, sep="-", end= '\r\n'),
 
-'''
-Tambien se puede usar como apartado de comentarios 
-funciona como las tres comillas 
-'''
-#Comentario
+
+
+ 
