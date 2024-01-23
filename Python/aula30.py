@@ -24,3 +24,4 @@ if velocidad_auto_passo_radar_1:
 
 if  auto_multado_radar_1 and velocidad_auto_passo_radar_1:
     print('auto multado por el radar 1')
+
