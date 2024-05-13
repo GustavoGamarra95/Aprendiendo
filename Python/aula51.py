@@ -1,9 +1,5 @@
 """
-EJERCICIO
-exibir los indices de la lista
-0 Maria
-1 Helena
-2 Luiz
+Introduccion al desempaque 
 """
-
-nombres = ["Maria", "Helena", "Luiz"]
+_, _, nome3,*_ = [ 'Maria', 'Helena', 'Luiz']
+print( nome3, _)
